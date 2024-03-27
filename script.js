@@ -213,14 +213,14 @@ async function fetchData(searchQuery) {
     }
 }
 
-// window.onload = favoriteListFromLocalStorage;
-window.onload = function() {
+window.onload = favoriteListFromLocalStorage;
+// window.onload = function() {
     // Clear local storage data
     // localStorage.clear();
 
     // Load favorite list from local storage
-    favoriteListFromLocalStorage();
-};
+    // favoriteListFromLocalStorage();
+// };
 
 
 document.querySelector('.menu-toggle').addEventListener('click', function() {
@@ -231,11 +231,3 @@ document.querySelector('.menu-toggle').addEventListener('click', function() {
   hamber.addEventListener('click',function(){
     hamber.classList.toggle('open')
   })
-
-  const hamburgerMenu = document.querySelector('.hamburger-menu');
-
-
-    hamburgerMenu.addEventListener('click', () => {
-        nav.classList.toggle('show');
-        hamburgerMenu.classList.toggle('open');
-    });
