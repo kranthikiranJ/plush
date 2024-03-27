@@ -216,7 +216,7 @@ async function fetchData(searchQuery) {
 // window.onload = favoriteListFromLocalStorage;
 window.onload = function() {
     // Clear local storage data
-    localStorage.clear();
+    // localStorage.clear();
 
     // Load favorite list from local storage
     favoriteListFromLocalStorage();
