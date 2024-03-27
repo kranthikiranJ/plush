@@ -323,16 +323,12 @@ nav ul li {
     text-align: center;
     font-family: "DM Sans", sans-serif;
   }
-  .mobile-navbar{
-    /* display: block; */
-}
+ 
 .explore-btn{
     /* text-align: center; */
     align-self: center;
     
 }
-.hamburger .open{
-    /* display: none; */
-}
+
   
   }
