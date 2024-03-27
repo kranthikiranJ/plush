@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photos Website</title>
+  <link rel="stylesheet" href="styles.css">
+<!-- Splide.js CSS -->
+<link rel="stylesheet" href="https://unpkg.com/@splidejs/splide@3/dist/css/splide.min.css">
+
+<!-- Splide.js JavaScript -->
+<script src="https://unpkg.com/@splidejs/splide@3/dist/js/splide.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="top-header">
+          <div class="header-container">
+            <p class="sale-text">SUPER SALE UPTO 40% OFF</p>
+          </div>
+        </div>
+        <nav>
+          <div class="container navbar">
+            
+            <ul class="nav-links">
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Community</a></li>
+            </ul>
+            <div class="logo-container">
+                <img src="https://res.cloudinary.com/dfsppvj1s/image/upload/v1711526121/Registered_Logo_PNG-02_4435x_1_i1b7wx.png">
+              </div>
+            <div class="user-actions">
+              <ul>
+                <li><a href="#">User</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Cart</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+
+      
+      <section class="banner">
+        <div class="container">
+          <div class="banner-content">
+            <h1>Stock photos</h1>
+            <p>John Wick is on the run after killing a member of the international assassins' guild, and with a $14 million price tag on his head, he is the target of hit men and women everywhere.</p>
+            <a href="#" class="explore-btn"><img src="https://res.cloudinary.com/dqnqix89g/image/upload/v1711527675/Icon_w5uvti.png" alt="Logo"> Explore</a>
+          </div>
+          <img src="https://res.cloudinary.com/dfsppvj1s/image/upload/v1711526123/Poster_s2lhrv.png" alt="Banner Image">
+        </div>
+      </section>
+
+      <section class="user-input">
+        <div class="container">
+          <form action="#" method="GET" id="search-form">
+            <div class="search-container">
+              <input type="text" name="search" id="search" placeholder="Search..." >
+              <img src="https://res.cloudinary.com/dqnqix89g/image/upload/v1711529205/Search_1_jjqvfg.png" alt="Search" id="search-icon">
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="search-results">
+        <div class="container" id="results">
+          <!-- Fetched images will be displayed here -->
+        </div>
+
+      </section>
+
+      <section class="similar-results-containter">
+        <div class="container"  id="results2">
+            <!-- Second similar results section -->
+        </div>
+
+        <section class="favourites-list-containter">
+            <div class="container"  id="results3">
+                <!-- Second similar results section -->
+            </div>
+    </section>
+      
+      
+      
+    
+      
+
+
+      
+      
+      <script src="script.js"></script>
+</body>
+</html>

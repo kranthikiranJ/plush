@@ -1,0 +1,16 @@
+start
+1.in this project we are goin to make a fetch call based on user search request and siplay the images.
+2. for his, we have to get a api from pexels.
+3. now lets work on the layout of the website.
+4. there are 3 sections in the website.
+5. header section. it has a main header, it displays the sale/offer. and a nav bar, displays the logo and other sections of the page.
+6. now the 2nd section is the banner section. it shows a image with text on it.
+7.the 3rd section has the search bar to take user input.
+8. once the user enter the search query, we make the a fetch call to the pexels with the searched query. 
+9. now we display the results from the api into the dom.
+10. just below the search bar, we should display the 1st image from the results. and image title, and photographer name, and on explore more button, link the address to photographer page.
+11. now in the similar results section, we should display all the remaining images in the slider along with image name and pphotographer name
+12. now when the user selects the image as favuorite, then it should be added to favourites section and removed from the similar items section.
+13. the heart symbol should turn red 
+14. also, the favourites section has sliding functionality .
+15.also, achieve the responsive design.
