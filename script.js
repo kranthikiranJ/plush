@@ -134,7 +134,7 @@ function removeFavourite(card,photo){
 
     let favoriteItems = JSON.parse(localStorage.getItem('favorite-container')) || [];
     favoriteItems = favoriteItems.filter(item=>item.id != photo.id);
-    localStorage.setItem('favourite-container',JSON.stringify(favoriteItems))
+    localStorage.setItem('favorite-container',JSON.stringify(favoriteItems))
 }
 function favoriteListFromLocalStorage(){
     const favouriteContainer = document.getElementById('favorite-container');
@@ -213,14 +213,14 @@ async function fetchData(searchQuery) {
     }
 }
 
-window.onload = favoriteListFromLocalStorage;
-// window.onload = function() {
+// window.onload = favoriteListFromLocalStorage;
+window.onload = function() {
     // Clear local storage data
     // localStorage.clear();
 
     // Load favorite list from local storage
-    // favoriteListFromLocalStorage();
-// };
+    favoriteListFromLocalStorage();
+};
 
 
 document.querySelector('.menu-toggle').addEventListener('click', function() {
