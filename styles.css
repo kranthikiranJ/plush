@@ -368,6 +368,10 @@ a.explore-btn{
   right: 5px;
   cursor: pointer;
 }
+#search {
+
+  width: 250px; /* Adjust width as needed */
+}
 
   
   }
