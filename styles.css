@@ -167,8 +167,12 @@ nav ul li {
     display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
   }
   .alt-text{
-    font-size: 14px;
+    font-size: 16px;
     font-family: "DM Sans", sans-serif;
+    margin-bottom: 5px;
+    text-align: left;
+    font-weight: bold;
+
   }
   .carousel-container .add {
     width: 20px; /* Adjust image size as needed */
@@ -239,8 +243,16 @@ nav ul li {
     margin-bottom: 15px;
   }
   .photographer{
-    font-weight: bold;
-    text-align: center;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #BE123C;
+    font-size: 12px;
+  }
+  .photographer-2{
+    text-align: left;
+    margin-bottom: 5px;
+    color:  #9CA3AF;
+    font-size: 12px;
   }
 
   @media screen and (max-width: 768px){
@@ -260,42 +272,9 @@ nav ul li {
     .large-nav{
         display: none;
     }
-/* Style for the dropdown menu */
-.dropdown-menu {
-    display: none;
-  }
+
   
-  .dropdown-menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .dropdown-menu ul li {
-    padding: 10px;
-    border-bottom: 1px solid #ccc; /* Optional: Add a border between menu items */
-  }
-  
-  /* Style for the hamburger icon */
-  .hamburger {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px; /* Adjust size as needed */
-    height: 20px; /* Adjust size as needed */
-    cursor: pointer;
-  }
-  
-  .hamburger .line {
-    width: 100%;
-    height: 3px; /* Adjust thickness as needed */
-    background-color: #333; /* Adjust color as needed */
-  }
-  
-  /* Style for the active dropdown menu */
-  .menu-open .dropdown-menu {
-    display: block;
-  }
+
   .banner-content {
     position: absolute;
     top: 50%;
@@ -304,8 +283,7 @@ nav ul li {
     text-align: center; /* Center align the text */
     color: white;
     z-index: 1; /* Ensures content is above the image */
-    flex-direction: column; /* Set flex direction to column */
-    align-items: center; /* Center align items */
+    
   }
   .img-info{
     display: flex;
@@ -316,19 +294,84 @@ nav ul li {
   }
   .alt-text{
     font-size: 12px;
-    /* text-align: center; */
+    margin-bottom: 5px;
+    text-align: center;
   }
   .photographer{
     font-weight: bold;
     text-align: center;
     font-family: "DM Sans", sans-serif;
+    margin-bottom: 10px;
+
   }
+  .photographer-2{
+    text-align: center;
+  }
+
  
 .explore-btn{
     /* text-align: center; */
     align-self: center;
+    margin: auto;
     
+}
+a.explore-btn{
+  margin: auto;
+}
+/* CSS for hamburger icon */
+.hamburger {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  margin: 3px;
+  transition: transform 0.3s ease;
+}
+
+/* CSS for dropdown menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 10px;
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+}
+
+.dropdown-menu a:hover {
+  background-color: #ddd;
+}
+
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
 }
 
   
   }
+
+
+
+ 

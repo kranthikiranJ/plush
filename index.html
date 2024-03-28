@@ -16,22 +16,23 @@
     <div class="logo-container">
       <img src="https://res.cloudinary.com/dfsppvj1s/image/upload/v1711526121/Registered_Logo_PNG-02_4435x_1_i1b7wx.png" alt="Logo">
     </div>
-    <div class="menu-toggle">
-      <div class="hamburger">
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
-      </div>
+
+    <div class="hamburger" onclick="toggleDropdown()">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
     </div>
-    <div class="dropdown-menu">
-      <ul>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Community</a></li>
-        <li><a href="#">User</a></li>
-        <li><a href="#">Search</a></li>
-        <li><a href="#">Cart</a></li>
-      </ul>
+    
+    <div id="dropdownMenu" class="dropdown-menu">
+      <span class="close-btn" onclick="closeDropdown()">X</span>
+      <a href="#">SHOP</a>
+      <a href="#">COMMUNITY</a>
+      <a href="#"><img src="https://res.cloudinary.com/dfsppvj1s/image/upload/v1711526122/Link_SVG_z5sm23.png" alt="user"></a>
+      <a href="#"><img src="https://res.cloudinary.com/dfsppvj1s/image/upload/v1711526121/Link_SVG_1_bzlq2f.png" alt="search"></a>
+      <a href="#"><img src="https://res.cloudinary.com/dfsppvj1s/image/upload/v1711526121/Link_SVG_2_sfjii0.png" alt="cart"></a>
     </div>
+    
+    
   </nav>
   
  
@@ -76,12 +77,22 @@
       </section>
 
       <section id="search-results-container">
+        <div class="dummy-result">
+          <div class="img-info">
+            <img src="https://res.cloudinary.com/dqnqix89g/image/upload/v1711643900/Thumbnails_oa7zi2.png" alt="Placeholder Image" class="result-img">
+            <div class="text">
+              <p class="alt-text">Laptop</p>
+              <p class="photographer">Photographer</p>
+              <button class="explore-btn">Explore More</button>
+            </div>
+          </div>
+        </div>
       </section>
       
       <section id="similar-results-container">
         <h3>Similar Results</h3>
         <div id="carousel-container">
-
+   
         </div>
       </section>
 
@@ -89,7 +100,7 @@
         <h3>Favourite List</h3>
         <div id="favorite-container">
 
-        </div>
+      </div>
       </section>
       
       

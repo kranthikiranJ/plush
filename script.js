@@ -3,6 +3,10 @@ const searchInput = document.getElementById("search");
 const firstResultsContainer = document.getElementById("search-results-container");
 
 function displayFirstResult(firstPhoto){
+    const dummyImage = document.querySelector('.dummy-result');
+    if(dummyImage) {
+        dummyImage.remove();
+    }
     const resultsContainer = document.createElement('div')
     resultsContainer.innerHTML='';
     const img = document.createElement('img');
@@ -56,6 +60,7 @@ function displaySimilarResluts(photos){
     altText.classList.add('alt-text')
     const photographerName = document.createElement('p');
     photographerName.textContent = `${photo.photographer}`;
+    photographerName.classList.add('photographer-2')
 
     const addButton = document.createElement('button');
     const heartImg = document.createElement('img')
@@ -104,11 +109,17 @@ function displayFavouriteList(photo){
     altText.classList.add('alt-text')
     const photographerName = document.createElement('p');
     photographerName.textContent = `${photo.photographer}`;
+    photographerName.classList.add('photographer-2')
 
     const removeButton = document.createElement('button');
-    removeButton.textContent = "X"
+
+    const favImg = document.createElement('img')
+    favImg.src = "https://res.cloudinary.com/dqnqix89g/image/upload/v1711561711/Favorite_1_ziabaq.png";
+    favImg.classList.add('add')
+    // removeButton.textContent = "X"
     
     removeButton.classList.add('heart-btn')
+    removeButton.appendChild(favImg)
 
    
         removeButton.addEventListener('click', function() {
@@ -159,10 +170,15 @@ function favoriteListFromLocalStorage(){
     altText.classList.add('alt-text')
     const photographerName = document.createElement('p');
     photographerName.textContent = `${photo.photographer}`;
+    photographerName.classList.add('photographer-2')
     const removeButton = document.createElement('button');
-    removeButton.textContent = "X"
+    const favImg = document.createElement('img')
+    favImg.src = "https://res.cloudinary.com/dqnqix89g/image/upload/v1711561711/Favorite_1_ziabaq.png";
+    favImg.classList.add('add')
+    // removeButton.textContent = "X"
     
     removeButton.classList.add('heart-btn')
+    removeButton.appendChild(favImg)
 
    
         removeButton.addEventListener('click', function() {
@@ -223,11 +239,16 @@ window.onload = function() {
 };
 
 
-document.querySelector('.menu-toggle').addEventListener('click', function() {
-    document.querySelector('.mobile-navbar').classList.toggle('menu-open');
-  });
-
-  let hamber = document.querySelector('.hamburger')
-  hamber.addEventListener('click',function(){
-    hamber.classList.toggle('open')
-  })
+function toggleDropdown() {
+    var dropdownMenu = document.getElementById("dropdownMenu");
+    if (dropdownMenu.style.display === "block") {
+      dropdownMenu.style.display = "none";
+    } else {
+      dropdownMenu.style.display = "block";
+    }
+  }
+  
+  function closeDropdown() {
+    var dropdownMenu = document.getElementById("dropdownMenu");
+    dropdownMenu.style.display = "none";
+  }
